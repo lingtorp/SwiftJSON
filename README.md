@@ -86,6 +86,7 @@ enum House: String, Reflectable {
  * Objects. 
  * It will append the product name to globally defined struct such as "YourCompany.YourStructName : { / ... / }" Feature or bug? Take your pick.
  * All untested scenarios ...
+ * It's probably super slow.
 
 # TODO
  * 'nil' should perhaps be 'NULL'
