@@ -1,6 +1,8 @@
 # SwiftJSON
 _Simple methods for creating JSON from a generic Swift struct_
 
+Written in Swift 1.2.
+
 ## Ever wanted to turn this ...
 ```swift
 struct UserInformation {
@@ -93,3 +95,4 @@ enum House: String, Reflectable {
  * Improve objects?
  * Format the JSON: prettyprinted? spacesaving?
  * Tests
+ * Swift 2.0?
