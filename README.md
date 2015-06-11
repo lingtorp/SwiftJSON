@@ -38,11 +38,11 @@ struct Facility {
     "username": "testuser123",
     "password": "test123",
     "email": "test123@gmail.com",
-    "YourCompany.Facility": {
+    "YourProjectName.Facility": {
         "id": "123455432167890",
         "construction_year": "1994",
         "area": "90",
-        "YourCompany.ProviderContract": {
+        "YourProjectName.ProviderContract": {
             "provider_id": "1234",
             "contract_type": "HOURLY",
             "fee": "300",
