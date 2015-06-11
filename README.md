@@ -35,15 +35,15 @@ struct Facility {
 ## ... into this.
 ```javascript
 {
-    "UserInformation": {
+    "YourCompany.UserInformation": {
         "username": "testuser123",
         "password": "test123",
         "email": "test123@gmail.com",
-        "Facility": {
+        "YourCompany.Facility": {
             "id": "123455432167890",
             "construction_year": "nil",
             "area": "90",
-            "ProviderContract": {
+            "YourCompany.ProviderContract": {
                 "provider_id": "1234",
                 "contract_type": "HOURLY",
                 "fee": "300",
