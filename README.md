@@ -35,31 +35,29 @@ struct Facility {
 ## ... into this.
 ```javascript
 {
-    "YourCompany.UserInformation": {
-        "username": "testuser123",
-        "password": "test123",
-        "email": "test123@gmail.com",
-        "YourCompany.Facility": {
-            "id": "123455432167890",
-            "construction_year": "nil",
-            "area": "90",
-            "YourCompany.ProviderContract": {
-                "provider_id": "1234",
-                "contract_type": "HOURLY",
-                "fee": "300",
-                "price": "nil"
-            },
-            "street": "Inifinity Loop 1",
-            "heating": "nil",
-            "facility_type": "ROWHOUSE",
-            "postal_code": "12345",
-            "occupants": "2"
-        }
+    "username": "testuser123",
+    "password": "test123",
+    "email": "test123@gmail.com",
+    "YourCompany.Facility": {
+        "id": "123455432167890",
+        "construction_year": "1994",
+        "area": "90",
+        "YourCompany.ProviderContract": {
+            "provider_id": "1234",
+            "contract_type": "HOURLY",
+            "fee": "300",
+            "price": "25"
+        },
+        "street": "Inifinity Loop 1",
+        "heating": "HEATPUMP",
+        "facility_type": "ROWHOUSE",
+        "postal_code": "12345",
+        "occupants": "2"
     }
 }
 ```
-Well, with these three methods you can.
-Just call JSON(yourStruct) and it will return you a valid JSON string, hopefully.
+Well, with these three methods you can. Notice how even optionals are represented.
+Just call the method JSON(yourStruct) and it will return you a valid JSON string, hopefully.
 
 ```swift
 let userInfo = UserInformation() // Create your struct somehow ...
@@ -91,7 +89,7 @@ enum House: String, Reflectable {
  * It's probably super slow.
 
 # TODO
- * 'nil' should perhaps be 'NULL'
+ * Optionals' 'nil' should perhaps be 'NULL'
  * Improve objects?
  * Format the JSON: prettyprinted? spacesaving?
  * Tests
